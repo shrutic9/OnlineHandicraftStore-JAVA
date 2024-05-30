@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Add your existing styles here */
+       * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-strip {
+            background-color: #333;
+            color: wheat;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .sub-top {
+            max-width: 1200px;
+            margin: 0 auto;
+            color: wheat;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #google_translate_element {
+            float: left;
+        }
+
+        /* Add your own styles for the translate button */
+        .translate-button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .sub-top {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #google_translate_element {
+                margin-top: 10px;
+            }
+        }
+        
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+	 position: relative;
+            background: url('https://img.freepik.com/free-photo/creating-jar-vase-white-clay-close-up_155003-12022.jpg?size=626&ext=jpg&ga=GA1.1.160346776.1700716757&semt=ais') center/cover no-repeat; /* Set the image as background */
+            height: 300px; /* Adjust the height as needed */
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+  /*padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;*/
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+    </style>
+</head>
+<body>
+
+
+<div class="top-strip">
+        <div class="sub-top">
+            <div id="google_translate_element"></div>
+            <button class="translate-button" onclick="openTranslateDialog()">Translate</button>
+        </div>
+    </div>
+
+    <!-- Your other content goes here -->
+
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+        }
+
+        function openTranslateDialog() {
+            // Add any additional functionality for the translation button click event
+            // For example, you can open a modal or perform other actions.
+            // This depends on how you want to handle the translation process.
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<div class="header" style="font-size: 24px; color: #FFFFFF;">
+    <h1>कला - Enriching India's Craftisans with sustainability</h1>
+</div>
+
+<div class="row">
+    
+        <div class="card">
+    <h2>Kondapalli Dolls, Andhra Pradesh</h2>
+    <div class="fakeimg" style="height:350px; border: 1px solid #ddd;">
+        <img src="https://assets.thehansindia.com/h-upload/2022/07/30/1305592-kondapalli-toys.webp" alt="Kondapalli Dolls Image" style="width:100%; height:100%; object-fit: cover;">
+    </div>
+    <p>This 400-year-old art form makes toys from soft wood known as tella poniki, where each part is carved separately. These pieces are then joined together with makku, a paste of tamarind seed powder and sawdust. Later after drying, details are added, and the toys are colored with either oil and watercolors or vegetable dyes and enamel paints. These toys are showcased every year at the celebration of Sankranthi, and this showcase is known as Bommala Koluvu.</p>
+</div>
+
+        <!-- Repeat the above structure for other cards, replacing image sources accordingly -->
+        <div class="card">
+    <h2>Wool Weaving, Himachal Pradesh</h2>
+    <div class="fakeimg" style="height:350px; border: 1px solid #ddd;">
+        <img src="https://himachaltonite.com/wp-content/uploads/2020/12/handloom.jpg" alt="Handloom Image" style="width:100%; height:100%; object-fit: cover;">
+    </div>
+    <p>Due to the low temperatures in Himachal, it comes as no surprise that nearly every household in Himachal owns a pit loom, a type of loom that fits inside a pit. Each region has its typical style. For example, the Kullu region is famous for its shawls that contain striking patterns and vibrant colors, while in the Chamba district, weaves assume a checkered pattern.</p>
+</div>
+        
+        <div class="card">
+    <h2>Coconut Shell Handicrafts, Kerala</h2>
+    <div class="fakeimg" style="height:350px; border: 1px solid #ddd;">
+        <img src="https://craffi.com/Admin/Images/editedbengallcoconutinside2.jpg" alt="Coconutshell Image" style="width:100%; height:100%; object-fit: cover;">
+    </div>
+    <p>This beautiful eco-friendly handicraft of Kerala requires aesthetics and expertise as it is very difficult to carve out exquisite patterns on a tough exterior. This traditional craft is one of the traditional handicrafts of the Kerala artisans, who carve out gorgeous collectables such as sugar containers, boxes in different shapes and sizes, and showpieces embellished with brass edges.</p>
+</div>
+
+<div class="card">
+    <h2>Lucknow Chikan Work, Uttar Pradesh</h2>
+    <div class="fakeimg" style="height:350px; border: 1px solid #ddd;">
+        <img src="https://indiachalk.com/wp-content/uploads/2021/10/Untitled-design-43-1024x536.jpg" alt="Chikan Work Image" style="width:100%; height:100%; object-fit: cover;">
+    </div>
+    <p>Chikan translates to embroidery. The technique of creating chikan work or chikan embroidery work is called chikankari. It is a delicate and artfully done hand embroidery which is one of Lucknow’s most ancient and well-known craft forms. It is one of the most famous Indian handicrafts and is done on a variety of textiles like muslin, silk, chiffon, organza, net, etc and gives the cloth a delicate appeal.</p>
+</div>
+        
+    </div>
+    
+
+</body>
+</html>
